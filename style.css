@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  color: #cefa94;
+  font-style: normal;
+}
+html{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+   background-image: url(image/bg.jpg);
+   /* background-color: rgba(148, 197, 14, 0.5); */
+   backdrop-filter: blur(10px);
+   margin: 0px;
+   background-attachment: fixed;
+   background-size: cover;
+   min-height: 100vh;
+   /* min-width: 1000px; */
+ }
+:root{
+
+  --color-background: linear-gradient(to top left,#02963379, #504f4f1c);
+}
+/* ***              nav bar              *** */
+ header {
+  background-color: transparent;
+  /* background: linear-gradient(to left, #015a262f, #01c02e3a); */
+  backdrop-filter: blur(40px);
+  position: sticky;
+  top: 0;
+  padding: 5px 100px 5px 100px;
+  border-radius: 100px;
+  margin:  0px 50px 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  color: azure;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+.logo img{
+  height:60px;
+}
+
+.navbar a , .col ul li a {
+  position: relative;
+  font-size: 18px;
+  color: azure; 
+  text-decoration: none;
+  margin-left: 40px;
+}
+.navbar a::before ,.col ul li a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(104, 227, 66);
+  transition: .3s;
+}
+.navbar a:hover::before ,.col ul li a:hover::before{
+  width: 100%;
+  color: rgb(138, 253, 103);
+}
+
+/****      accueil      ****/
+#accueil{
+  display: flex;
+  margin: 20px;
+  align-items: center;
+}
+.image_accueil{
+  width: 40%;
+  height: 400px;
+  background-color: rgba(127, 255, 212, 0);
+}
+.text_accueil{
+  margin: 30px;
+  padding:70px 30px 30px 30px ;
+  border: 2px rgb(43, 226, 183) solid ;
+  border-radius: 30px; 
+  background: linear-gradient(to top left, #02963379, #504f4f1c);
+  backdrop-filter: blur(10px);
+  width: 60%;
+  font-size: 30px;
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  text-align: left;
+  height: 400px;
+
+}
+.text_accueil h1{
+  color: azure;
+  font-size: 50px;
+  padding: 30px 0px;  
+}
+
+/****      categorie      ****/
+#categorie{
+  display: flex;
+  align-items: center;
+  padding: 150px 100px 10px 100px;
+  justify-content: space-between;
+}
+#categorie a {
+  text-decoration: none;
+}
+.element_categorie{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.element_categorie_image1,
+.element_categorie_image2,
+.element_categorie_image3,
+.element_categorie_image4
+{
+ height: 150px;
+ background-color: rgb(43, 226, 183);
+ width: 150px;
+ border: 2px rgb(43, 226, 183) ridge;
+ border-radius: 100%;
+ margin-bottom: 10px;
+}
+.element_categorie_image1{
+  background-image: url(image/11.jpg);
+  background-size: cover;
+}
+.element_categorie_image2{
+  background-image: url(image/22.webp);
+  background-size: cover;
+}
+.element_categorie_image3{
+  background-image: url(image/55.jpg);
+  background-size: cover;
+}
+.element_categorie_image4{
+  background-image: url(image/44.jpg);
+  background-size: cover;
+
+}
+.element_categorie_title{
+ width: 200px; 
+ background-color: rgba(0, 255, 170, 0.215);
+ /* background: linear-gradient(to top left, #00aa7179, #0000008e); */
+ backdrop-filter: blur(10px);
+ border: 2px rgb(43, 226, 183) ridge;
+ border-radius: 100px;
+ padding: 10px;
+}
+.element_categorie_title p{
+  color: aquamarine;
+  text-align: center;
+}
+
+
+/*****      definitions     *****/
+
+.definition_zone{
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin: 150px  30px;
+  justify-content: space-around;
+  align-items: center;
+}
+.definition_text{
+  /* background-color: rgba(0, 255, 170, 0.205); */
+  background: var(--color-background);
+  overflow-x: auto;
+  backdrop-filter: blur(10px);
+  height: 400px;
+  padding: 30px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  line-height: 2;
+  text-align: center;
+  border: 2px rgb(43, 226, 183) ridge;
+  border-radius: 20px;
+  width: 45%;
+}
+.definition_text::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.definition_text::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+.definition_text::-webkit-scrollbar-thumb {
+  background-color: rgb(43, 226, 61); 
+  border-radius: 5px; 
+}
+
+.definition_text::-webkit-scrollbar-thumb:hover {
+  background-color: #07981f7d; 
+}
+.definition_text h2{
+  color: antiquewhite;
+  margin-bottom: 30px;
+}
+.definition_images{
+  height: 500px;
+  margin:  0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  
+}
+
+.definition_images img{
+  height: auto;
+  width: 45%;
+  border: 3px rgba(151, 255, 238, 0.461) solid ;
+  border-radius: 20px;
+ 
+  
+}
+.monodico{
+  justify-content: space-around;
+  display: flex;
+}
+.monodico div{
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+  width: 40vw;
+}
+.monodico  img{ 
+  border-radius: 10px;
+  
+
+  border: 2px white solid;
+  width: auto;
+  height: 33%;
+}
+
+
+
+/*******        monoco dico comparaison         ********/
+
+.monoco_dico_title{ 
+  margin: 50px 15%;
+  padding: 80px;
+  font-size: 30px;
+  border-radius: 30px;
+  background: var(--color-background);
+  backdrop-filter: blur(10px);
+  width: auto;
+  text-align: center;
+}
+.top_comparaison{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 30px 0px 30px;
+  padding: 0px 30px;
+
+  
+}
+.top_comparaison div{
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: azure;
+  background: linear-gradient(to top left, #015a3c79, #6ab1588e);
+  font-size: 30px;
+  backdrop-filter: blur(10px);
+  width: 30%;
+  text-align: center;
+
+}
+.main_comparaison{
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 30px;
+
+  
+}
+.monoco_caracteristiques, .caracteristiques, .dico_caracteristiques
+{
+  width: 30%;
+  text-align: center;
+}
+.monoco_caracteristiques, .dico_caracteristiques{
+  background-color: rgba(131, 243, 116, 0.493);
+
+}
+
+.element_comparaison , .carac 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  padding-top: 30px;
+  margin: 10px;
+}
+.carac img{
+  height: 100%;
+  width: auto;
+}
+.image_carac {
+  border-radius: 50%;
+  background-color: aliceblue;
+  height: 130px;
+  width: 130px;
+}
+.element_comparaison p /*  , .carac p */{ 
+  width: 150px;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 5px 0px;
+}
+
+/* ****** video ******* */
+.video_zone{
+  background: linear-gradient(to top left, #00aa7179, #0000008e);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  
+  margin: 30px 00px;
+  display: flex;
+  justify-content: center;
+}
+.video_zone video{
+  border-radius: 20px;
+  height: auto;
+  width: 60%;
+}
+/* ***********        a_propos       ********** */
+#a_propos div{
+  display: flex;
+  flex-direction: column;
+
+}
+#a_propos div h3 {
+  font-size: 24px;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+#a_propos div p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: aliceblue;
+}
+/* *********          footer         ********** */
+footer{
+  width: 100%;
+  /* background: linear-gradient(to right,#00093c, #2d0b00); */
+  background: linear-gradient(to top left, #015a3c79, #6ab1588e);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 50px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer_email{
+  width: fit-content;
+  border-bottom: 1px solid #f66335;
+  margin: 20px 0;
+}
+.col ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+.col ul li a{
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+}
+
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+footer .copyright{
+  text-align: center;
+}
+/* ******************** */
